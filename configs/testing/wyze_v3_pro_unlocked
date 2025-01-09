@@ -1,0 +1,17 @@
+# NAME: (T40X, GC4653, ???) with Kernel 4.4
+# FRAG: soc-xburst2 toolchain-xburst2 ccache brand rootfs kernel system target uboot
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="$(BR2_EXTERNAL)/board/ingenic/xburst2/kernel/$(KERNEL_VERSION)/t40x.wyze_v3.config"
+BR2_PACKAGE_E2FSPROGS=y
+BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_4_4=y
+BR2_PACKAGE_WIFI=y
+BR2_PACKAGE_WIFI_RTL8189FS=y
+BR2_SENSOR_GC4653=y
+BR2_ETHERNET=y
+BR2_SOC_INGENIC_T40=y
+#BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_3_10 is not set
+BR2_TOOLCHAIN_EXTERNAL_HEADERS_4_4=y
+BR2_TOOLCHAIN_EXTERNAL_URL="https://github.com/themactep/thingino-firmware/releases/download/toolchain/thingino-toolchain_xburst2_musl_gcc14-linux-mipsel.tar.gz"
+BR2_TOOLCHAIN_USES_MUSL=y
+FLASH_SIZE_16=y
+KERNEL_VERSION_4=y
+BR2_BINUTILS_VERSION_2_43_X=y

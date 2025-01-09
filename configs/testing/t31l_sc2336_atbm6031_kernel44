@@ -1,7 +1,7 @@
 # NAME: (T31L, SC2336, ATBM6031) with Kernel 4.4
 # FRAG: soc toolchain ccache brand rootfs kernel system target local
 #BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_3_10 is not set
-BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="$(BR2_EXTERNAL)/board/ingenic/xburst1/kernel/$(KERNEL_VERSION)/t31l.cinnado_d1.config"
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="$(BR2_EXTERNAL)/board/ingenic/xburst1/kernel/4.4/t31l.cinnado_d1.config"
 BR2_PACKAGE_E2FSPROGS=y
 BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_4_4=y
 BR2_PACKAGE_WIFI=y
