@@ -174,7 +174,7 @@ body:before {
 	cursor: pointer;
 }
 
-#daynight_interval {
+#day_night_interval {
 	display: inline-block;
 	margin: auto 0.25rem;
 	max-width: 3rem;
@@ -284,6 +284,16 @@ pre {
 pre.list b {
 	display: inline-block;
 	width: 8em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select
+{
+	font-family: var(--bs-font-monospace);
+	font-size: 1rem;
+	color: lightpink;
 }
 
 textarea {

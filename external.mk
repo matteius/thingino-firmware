@@ -1,5 +1,7 @@
 $(info --- FILE: external.mk ---)
 
+SIZE_256M := 268435456
+SIZE_128M := 134217728
 SIZE_32M := 33554432
 SIZE_16M := 16777216
 SIZE_8M := 8388608
@@ -483,6 +485,8 @@ else ifeq ($(BR2_SENSOR_OS02D20),y)
 	SENSOR_MODEL := os02d20
 else ifeq ($(BR2_SENSOR_OS02G10),y)
 	SENSOR_MODEL := os02g10
+else ifeq ($(BR2_SENSOR_OS02G10S1),y)
+	SENSOR_MODEL := os02g10s1
 else ifeq ($(BR2_SENSOR_OS02K10),y)
 	SENSOR_MODEL := os02k10
 else ifeq ($(BR2_SENSOR_OS03B10),y)
@@ -517,6 +521,8 @@ else ifeq ($(BR2_SENSOR_OV9750),y)
 	SENSOR_MODEL := ov9750
 else ifeq ($(BR2_SENSOR_PS5258),y)
 	SENSOR_MODEL := ps5258
+else ifeq ($(BR2_SENSOR_PS5250),y)
+	SENSOR_MODEL := ps5250
 else ifeq ($(BR2_SENSOR_PS5260),y)
 	SENSOR_MODEL := ps5260
 else ifeq ($(BR2_SENSOR_PS5268),y)
@@ -632,6 +638,8 @@ else ifeq ($(BR2_ISP_CLK_250MHZ),y)
 	ISP_CLK := 250000000
 else ifeq ($(BR2_ISP_CLK_300MHZ),y)
 	ISP_CLK := 300000000
+else ifeq ($(BR2_ISP_CLK_350MHZ),y)
+	ISP_CLK := 350000000
 else
 	ISP_CLK := 100000000
 endif
@@ -764,6 +772,10 @@ else ifeq ($(FLASH_SIZE_16),y)
 	FLASH_SIZE := $(SIZE_16M)
 else ifeq ($(FLASH_SIZE_32),y)
 	FLASH_SIZE := $(SIZE_32M)
+else ifeq ($(FLASH_SIZE_128),y)
+	FLASH_SIZE := $(SIZE_128M)
+else ifeq ($(FLASH_SIZE_256),y)
+	FLASH_SIZE := $(SIZE_256M)
 else
 	FLASH_SIZE := $(SIZE_8M)
 endif
